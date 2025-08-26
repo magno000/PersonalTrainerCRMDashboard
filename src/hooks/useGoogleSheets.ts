@@ -63,7 +63,7 @@ export const useGoogleSheets = () => {
     fetchData();
     
     // Actualizar datos cada 30 segundos
-    const interval = setInterval(fetchData, 30000);
+    const interval = setInterval(fetchData, 3000000);
     
     return () => clearInterval(interval);
   }, []);
